@@ -1,0 +1,7 @@
+# Python Notebook checkpoints
+.ipynb_checkpoints
+
+# R history files
+.Rhistory
+
+.DS_Store
