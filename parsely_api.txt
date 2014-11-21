@@ -1,0 +1,34 @@
+GET /analytics/post/detail
+
+res = HTTParty.get("http://api.parsely.com/v2/analytics/post/detail?apikey=talkingpointsmemo.com&secret=6D6Zf4WG22Xbu2M3o2sXSrtzCFVAWrF3GEZHR84dlx0&url=http://talkingpointsmemo.com/livewire/obama-talks-health-care-zach-galifianakis")
+
+days – Number of days since today to consider for _hits value. If left unspecified, the total pageviews on the link for its lifetime will be returned. Use days=1 or days=3 to only consider traffic from last several days.
+
+days = Date.today.mjd - a.published_at.to_date.mjd
+
+res=HTTParty.get("http://api.parsely.com/v2/analytics/post/detail?apikey=talkingpointsmemo.com&secret=6D6Zf4WG22Xbu2M3o2sXSrtzCFVAWrF3GEZHR84dlx0&url=http://talkingpointsmemo.com/livewire/obama-talks-health-care-zach-galifianakis&days=220")
+
+example response:
+{
+  "author" => "Catherine Thompson",
+
+  "url" => "http://talkingpointsmemo.com/livewire/obama-talks-health-care-zach-galifianakis",
+
+  "title" => "Obama Trades Zingers, Talks Health Care With Zach Galifianakis (VIDEO)",
+
+  "section" => "livewire",
+
+  "tags" => [],
+
+  "thumb_url_medium" => "http://c0001566.cdn1.cloudfiles.rackspacecloud.com/medium_d56b9b33ca8a956f8a2e143e14df557c5a937ddd.jpg",
+
+  "_hits" => 106,
+
+  "authors" => ["Catherine Thompson"],
+
+  "image_url" => "http://img.talkingpointsmemo.com/image/upload/v1394538019/bzubbb2a6t1pjsnucfkl.png",
+
+  "pub_date" => "2014-03-11T11:47:01",
+
+  "metadata" => "{}"
+}

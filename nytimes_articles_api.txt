@@ -1,0 +1,7 @@
+res = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=romney&fl=headline,news_desk&api-key=e7f754fbb084a342de0efe77f721de64:11:70185922")
+
+
+res = HTTParty.get("http://api.nytimes.com/svc/search/v2/articlesearch.json?fq=romney&facet_field=day_of_week&begin_date=20120101&end_date=20120101&fl=headline,keywords,news_desk&api-key=e7f754fbb084a342de0efe77f721de64:11:70185922")
+
+
+res["response"]

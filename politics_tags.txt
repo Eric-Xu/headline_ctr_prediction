@@ -1,0 +1,18 @@
+Media Matters
+  Issues and sub-issues:
+    Diversity & Discrimination - Class, Gender, LGBT, Race & Ethnicity, Racial, Justice, Religion
+    http://mediamatters.org/issues
+
+  Individual issue index:
+    http://mediamatters.org/issues/class?p=2&s=50   => 50 seems to be max pagination param
+    http://mediamatters.org/issues/taxes
+
+
+Politico
+  At the bottom of a story page:
+  Read more about: Google, Silicon Valley, Amazon, States, Business, International, Drone
+
+  Example url redirects:
+  http://www.politico.com/tag/business
+  http://www.politico.com/tag/drones
+  http://www.politico.com/tag/google

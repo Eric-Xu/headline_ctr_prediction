@@ -1,0 +1,9 @@
+1. What is your topic? Can you phrase your topic in the form of a question that you hope to answer?
+A: Given an article title, how accurately can we predict the popularity of that article published on TalkingPointsMemo.com (TPM).
+
+2. What do you plan to use as your source of data? Do you have a sense for how large your dataset is? Any other characteristics you know of?
+A: I will be analyzing a list of 10,000 articles published over the last year on TPM. They will all be tied to politics, since TPM is a political news media company. Besides titles, each article will also have a teaser and the body content. The articles will be downloaded through our company's database.
+Each article's popularity will be measured by page views via the Parse.ly API, number of likes via the Facebook API, and number of retweets via the Twitter API.
+
+3. What tools or topics do you hope to learn and demonstrate by the end? In other words, what are your learning objectives?
+A: Since none of the articles are currently categorized, I will first try to do that through an unsupervised categorization model. A hypothetical question of my learning objective could be "Given a title, how many page views will the article receive after one week?"

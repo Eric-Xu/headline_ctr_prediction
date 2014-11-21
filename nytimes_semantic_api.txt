@@ -1,0 +1,1 @@
+res = HTTParty.get("http://api.nytimes.com/svc/semantic/v2/concept/name/nytd_des/Baseball.json?fields=pages,scope_notes,search_api_query&api-key=131afe8b105042f983150e37c76ff799:14:70185922")
