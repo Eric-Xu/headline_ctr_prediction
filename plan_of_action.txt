@@ -1,0 +1,37 @@
+1. Goal one is to come up with a model to classify headlines.
+
+	- This is similar to the spam classification and twitter sentiment analysis. Models to try are MultinomialNB, BernoulliNB, and LogisticRegression. These would have to be run on each headline category. Return the top three categories ranked by prediction confidence.
+
+		- http://nbviewer.ipython.org/github/Eric-Xu/fall_2014_lessons/blob/master/dataexplor05/exu/naive_bayes_tweets_exu.ipynb
+
+	- Can also try using a Random Forest; is it possible to get next-best prediction?
+
+		- http://nbviewer.ipython.org/github/ga-students/DS-LA-03/blob/master/src/lesson09/Random%20Forests.ipynb
+
+	- NLTK's Porter stemmer
+
+	- The base goal is to be able to return a category and its prediction accuracy.
+
+	- Additional goals is to return the top three categories ranked by their prediction accuracies.
+
+	- Other considerations is to try topic modeling instead of using a supervised learning method.
+
+
+2. Goal two is to come up with a model to predict page views given a headline.
+
+	- Option 1 is to run a linear regression model to predict actual page views.
+
+		- try Vowpal Wabbit; http://fastml.com/predicting-advertised-salaries/
+
+		- check if page views has a normal distribution. If the distribution is skewed, then normalize it by taking the log value, since linear models expect the residuals to have a normal distribution. (http://fastml.com/predicting-advertised-salaries/)
+
+		- k-means cannot handle headlines as strings
+		-
+
+	- Option 2 is to run a LogReg or NaiveBayes model to predict which page-view-quartile a headline is likely to fall under. This would require converting the raw page views into performance quartiles.
+
+	- Additional goals:
+
+		- use category_hat as an additional predictor
+
+			- http://nbviewer.ipython.org/github/Eric-Xu/fall_2014_lessons/blob/master/dataexplor05/exu/dataexplor05_sample_new_exu.ipynb
