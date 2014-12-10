@@ -1,0 +1,70 @@
+# Introduction:
+
+## Part I - Headline Classification
+
+### Data Collection
+
+- BeautifulSoup web scraping for headlines and tags
+
+### Data Cleaning
+
+- Remove unnecessary html tags and characters
+
+### Feature Engineering
+
+#### Dataset Construction
+
+- Convert to lowercase
+- Apply the Porter stemming algorithm to each word
+- Tokenize the text and generate bigrams. -- Vectorization and tokenizing
+- Throw away some less important words. -- stop word
+- Throwing away words that occur way too often to be of any help in detecting relevant posts.
+- Throwing away words that occur so seldom that there is only a small chance that they occur in future posts.
+- Counting the remaining words.
+- Calculating TF-IDF values from the counts, considering the whole text corpus.
+
+### Modeling Techniques
+
+#### Base Learners
+
+- Logistic Regression
+- Multinomial Naive Bayes
+- Random Forest
+- Support Vector Machine
+- K-Nearest Neighbor
+
+#### Stacking
+
+- Logistic Regression
+
+
+## Part II - Pageview Prediction
+
+### Data Collection
+
+- SQL queries to get headlines
+- Parsely API to get pageviews
+
+### Feature Engineering
+
+#### Data Preparation
+
+- Apply log normalization to pageviews
+
+#### Dataset Construction
+
+- same steps as Part I
+- Part-of-speech (POS) counting
+
+### Modeling Techniques
+
+#### Base Learners
+
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+
+#### Feature Selection
+
+- SelectKBest
+- Forward Feature Selection
