@@ -6,7 +6,7 @@
 
 - BeautifulSoup web scraping for headlines and tags
 
-### Data Cleaning
+### Data Munging
 
 - Remove unnecessary html tags and characters
 
