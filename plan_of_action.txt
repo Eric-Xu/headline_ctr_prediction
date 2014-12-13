@@ -37,8 +37,11 @@
       - http://www.chioka.in/stacking-blending-and-stacked-generalization/
       - https://github.com/log0/vertebral/blob/master/stacked_generalization.py
 
-    - Streamline models by building a Pipeline
+    - Streamline models by using Pipelines and FeatureUnion
 
+      - http://zacstewart.com/2014/08/05/pipelines-of-featureunions-of-pipelines.html
+      - https://github.com/zacstewart/kaggle_seeclickfix/blob/master/estimator.py
+      - http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/machine_learning/scikit-learn/scikit-pipeline.ipynb
       - http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
 
